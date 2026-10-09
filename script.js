@@ -38,3 +38,14 @@ botaoSurpresa.addEventListener("click", function () {
         botaoSurpresa.textContent = "❤️ Fechar minha surpresa";
     }
 });
+
+
+const botaoAbrirSurpresa = document.getElementById("botaoAbrirSurpresa");
+
+if (botaoAbrirSurpresa) {
+    botaoAbrirSurpresa.addEventListener("click", function () {
+        document.querySelector(".surpresa-final").scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+}
